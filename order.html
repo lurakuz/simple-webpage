@@ -15,18 +15,18 @@
         <h1>Замовити товари</h1>
    </header> 
    <section>
-       <form>
+       <form method="POST" action="https://formspree.io/lurakuz08@gmail.com">
           <label for="user-name">Юзернейм:</label> 
-              <input id="user-name" type="text" placeholder="Your User-Name">
+              <input id="user-name" type="text" placeholder="Your User-Name" required>
           <br>
-          <label for="password">Пароль*:</label>
-              <input id="password" type="text" placeholder="Your password">
+          <label for="password">Пароль:</label>
+              <input id="password" type="password" placeholder="Your password" required>
           <br>
-          <label for="adress">Адреса доставки*:</label>
-              <input id="adress" type="text" placeholder="Your adress">
+          <label for="adress">Адреса доставки:</label>
+              <input id="adress" type="text" placeholder="Your adress" required>
           <br>
           <label for="phone-number">Номер Телефону:</label>
-              <input id="phone-number" type="number" placeholder="Your phone-number">
+              <input id="phone-number" type="text" placeholder="Your phone-number" required>
           <br>
           <label>
               Продукт:
@@ -42,13 +42,11 @@
           </label>
           <br>
           <label>Примітка:
-              <input type="textarea" name="message"/>
+              <textarea type="textarea" placeholder="Your message"></textarea>
           </label>
-            
             <br>
             <input type="submit">
             <input type="reset">
-          <p>*-тільки букви</p>
        </form>
    </section>
 </body>
